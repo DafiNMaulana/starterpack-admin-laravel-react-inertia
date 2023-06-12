@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useForm, usePage } from "@inertiajs/react";
-import { LogoutCurve, SecurityUser, Menu, SearchNormal1 } from "iconsax-react";
+import InputSearch from "@/Components/InputSearch";
+import { LogoutCurve, SecurityUser, Menu, SearchNormal1, ArrowDown2 } from "iconsax-react";
 
 export default function Navbar({onClick}) {
     return (
@@ -12,22 +13,8 @@ export default function Navbar({onClick}) {
 
                 <span className="w-1 h-4 border-l-2 border-base-100 mr-4"></span>
 
-                <label
-                    htmlFor="search"
-                    className="input-group input-group-sm flex"
-                >
-                    <button className="btn btn-sm bg-base-100 hover:bg-base-100 border-none rounded-r-none">
-                        <SearchNormal1
-                            variant="Linear"
-                            className="text-[#C7C3C3] w-4"
-                        />
-                    </button>
-                    <input
-                        type="text"
-                        placeholder="Cari anime kesayangan disini ..."
-                        className="input input-sm rounded-r-lg placeholder:font-normal outline-none border-none focus:ring-0 focus:ring-offset-0 focus:outline-none w-[350px]"
-                    />
-                </label>
+                <InputSearch />
+
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-bottom dropdown-end flex">
@@ -43,11 +30,7 @@ export default function Navbar({onClick}) {
                                 <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                             </div>
                         </div>
-                        <img
-                            src="/icon/profile-logout.svg"
-                            alt="profile-logout"
-                            className="group-active:translate-y-1 duration-100"
-                        />
+                            <ArrowDown2 className="w-6 text-primary" variant="Bulk" />
                     </label>
                     <ul
                         tabIndex={0}
