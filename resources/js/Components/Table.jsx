@@ -8,7 +8,7 @@ export default function Table({children, children2}) {
         <div className="bg-white rounded-xl p-4">
             <div className="flex justify-end gap-4">
                 <label htmlFor="search">
-                    <InputSearch />
+                    <InputSearch placeholder="Cari user disini ..." />
                 </label>
                 <BtnLinkSm href="#" content="Tambah user"/>
             </div>

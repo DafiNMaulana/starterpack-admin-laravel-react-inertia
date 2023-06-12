@@ -13,7 +13,7 @@ export default function Navbar({onClick}) {
 
                 <span className="w-1 h-4 border-l-2 border-base-100 mr-4"></span>
 
-                <InputSearch />
+                <InputSearch placeholder="Cari anime kesayangan kamu disini ..." />
 
             </div>
             <div className="navbar-end">
